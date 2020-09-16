@@ -1,0 +1,21 @@
+##############################################################################
+## Filename:          E:/Code_Doctorat_Virtex5/Base_System_MMM/pcores/ip_mmm256_opt_v1_00_a/data/ip_mmm256_opt_v2_1_0.pao
+## Description:       Peripheral Analysis Order
+## Date:              Tue Feb 06 14:32:44 2018 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+lib proc_common_v3_00_a  all 
+lib plbv46_slave_single_v1_01_a  all 
+lib ip_mmm256_opt_v1_00_a user_logic vhdl
+lib ip_mmm256_opt_v1_00_a ip_mmm256_opt vhdl
+lib ip_mmm256_opt_v1_00_a stockage_unite vhdl
+lib ip_mmm256_opt_v1_00_a control_MMM vhdl
+lib ip_mmm256_opt_v1_00_a montgomery_multiplication vhdl
+lib ip_mmm256_opt_v1_00_a aig_addr_din vhdl
+lib ip_mmm256_opt_v1_00_a etage_1 vhdl
+lib ip_mmm256_opt_v1_00_a etage_2 vhdl
+lib ip_mmm256_opt_v1_00_a cellule_full_adder vhdl
+lib ip_mmm256_opt_v1_00_a FLIP_FLOP_D vhdl
+lib ip_mmm256_opt_v1_00_a multiplieur_accumulateur vhdl
+lib ip_mmm256_opt_v1_00_a propagate_adder vhdl
+lib ip_mmm256_opt_v1_00_a reg vhdl

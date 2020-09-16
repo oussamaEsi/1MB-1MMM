@@ -1,0 +1,209 @@
+Release 13.2 ngdbuild O.61xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Command Line: E:\Xilinx\13.2\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe -p
+xc5vlx50tff1136-1 -nt timestamp -bm system.bmm
+E:/Code_Doctorat_Virtex5/Base_System_MMM/implementation/system.ngc -uc
+system.ucf system.ngd
+
+Reading NGO file
+"E:/Code_Doctorat_Virtex5/Base_System_MMM/implementation/system.ngc" ...
+Loading design module
+"E:/Code_Doctorat_Virtex5/Base_System_MMM/implementation/microblaze_0_wrapper.ng
+c"...
+Loading design module
+"E:/Code_Doctorat_Virtex5/Base_System_MMM/implementation/mb_plb_wrapper.ngc"...
+Loading design module
+"E:/Code_Doctorat_Virtex5/Base_System_MMM/implementation/ilmb_wrapper.ngc"...
+Loading design module
+"E:/Code_Doctorat_Virtex5/Base_System_MMM/implementation/dlmb_wrapper.ngc"...
+Loading design module
+"E:/Code_Doctorat_Virtex5/Base_System_MMM/implementation/dlmb_cntlr_wrapper.ngc"
+...
+Loading design module
+"E:/Code_Doctorat_Virtex5/Base_System_MMM/implementation/ilmb_cntlr_wrapper.ngc"
+...
+Loading design module
+"E:/Code_Doctorat_Virtex5/Base_System_MMM/implementation/lmb_bram_wrapper.ngc"..
+.
+Loading design module
+"E:/Code_Doctorat_Virtex5/Base_System_MMM/implementation/rs232_uart_0_wrapper.ng
+c"...
+Loading design module
+"E:/Code_Doctorat_Virtex5/Base_System_MMM/implementation/xps_timer_0_wrapper.ngc
+"...
+Loading design module
+"E:/Code_Doctorat_Virtex5/Base_System_MMM/implementation/clock_generator_0_wrapp
+er.ngc"...
+Loading design module
+"E:/Code_Doctorat_Virtex5/Base_System_MMM/implementation/mdm_0_wrapper.ngc"...
+Loading design module
+"E:/Code_Doctorat_Virtex5/Base_System_MMM/implementation/proc_sys_reset_0_wrappe
+r.ngc"...
+Loading design module
+"E:/Code_Doctorat_Virtex5/Base_System_MMM/implementation/ip_mmm256_opt_0_wrapper
+.ngc"...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "system.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+INFO:ConstraintSystem:178 - TNM 'sys_clk_pin', used in period specification
+   'TS_sys_clk_pin', was traced into PLL_ADV instance
+   clock_generator_0/PLL0_INST/Using_PLL_ADV.PLL_ADV_inst. The following new TNM
+   groups and period specifications were generated at the PLL_ADV output(s): 
+   CLKOUT0: <TIMESPEC TS_clock_generator_0_clock_generator_0_SIG_PLL0_CLKOUT0 =
+   PERIOD "clock_generator_0_clock_generator_0_SIG_PLL0_CLKOUT0" TS_sys_clk_pin
+   HIGH 50%>
+
+Done...
+
+Processing BMM file "system.bmm" ...
+
+Checking expanded design ...
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[0].TCSR0_FF
+   _I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[1].TCSR0_FF
+   _I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[2].TCSR0_FF
+   _I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[3].TCSR0_FF
+   _I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[4].TCSR0_FF
+   _I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[5].TCSR0_FF
+   _I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[6].TCSR0_FF
+   _I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[7].TCSR0_FF
+   _I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[8].TCSR0_FF
+   _I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[9].TCSR0_FF
+   _I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[10].TCSR0_F
+   F_I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[11].TCSR0_F
+   F_I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[12].TCSR0_F
+   F_I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[13].TCSR0_F
+   F_I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[14].TCSR0_F
+   F_I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[15].TCSR0_F
+   F_I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[16].TCSR0_F
+   F_I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[17].TCSR0_F
+   F_I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[18].TCSR0_F
+   F_I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[19].TCSR0_F
+   F_I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[20].TCSR0_F
+   F_I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[0].TCSR1_FF
+   _I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[1].TCSR1_FF
+   _I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[2].TCSR1_FF
+   _I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[3].TCSR1_FF
+   _I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[4].TCSR1_FF
+   _I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[5].TCSR1_FF
+   _I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[6].TCSR1_FF
+   _I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[7].TCSR1_FF
+   _I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[8].TCSR1_FF
+   _I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[9].TCSR1_FF
+   _I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[10].TCSR1_F
+   F_I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[11].TCSR1_F
+   F_I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[12].TCSR1_F
+   F_I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[13].TCSR1_F
+   F_I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[14].TCSR1_F
+   F_I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[15].TCSR1_F
+   F_I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[16].TCSR1_F
+   F_I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[17].TCSR1_F
+   F_I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[18].TCSR1_F
+   F_I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[19].TCSR1_F
+   F_I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[20].TCSR1_F
+   F_I' has unconnected output pin
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:  42
+
+Total memory usage is 211196 kilobytes
+
+Writing NGD file "system.ngd" ...
+Total REAL time to NGDBUILD completion:  22 sec
+Total CPU time to NGDBUILD completion:   21 sec
+
+Writing NGDBUILD log file "system.bld"...

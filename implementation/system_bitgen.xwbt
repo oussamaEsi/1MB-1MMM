@@ -1,0 +1,7 @@
+INFILE=E:\Code_Doctorat_Virtex5\Base_System_MMM\implementation\system.ncd
+OUTFILE=E:\Code_Doctorat_Virtex5\Base_System_MMM\implementation\system.bit
+FAMILY=Virtex5
+PART=xc5vlx50t-1ff1136
+WORKINGDIR=E:\Code_Doctorat_Virtex5\Base_System_MMM\implementation
+LICENSE=ISE
+USER_INFO=211135582_1777514836_210622955_107

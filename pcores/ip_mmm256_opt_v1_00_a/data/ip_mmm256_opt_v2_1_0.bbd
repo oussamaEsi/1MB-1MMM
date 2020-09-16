@@ -1,0 +1,9 @@
+##############################################################################
+## Filename:          E:\Code_Doctorat_Virtex5\Base_System_MMM\pcores/ip_mmm256_opt_v1_00_a/data/ip_mmm256_opt_v2_1_0.bbd
+## Description:       Black Box Definition
+## Date:              Tue Feb 06 14:41:30 2018 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+Files
+################################################################################
+fifo_mem.ngc,mul1.ngc,mul2.ngc,multiplier.ngc,single_port_m.ngc

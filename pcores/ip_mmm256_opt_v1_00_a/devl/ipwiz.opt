@@ -1,0 +1,9 @@
+-batch 
+-create ip_mmm256_opt 
+-ver 1.00.a 
+-dir "E:\Code_Doctorat_Virtex5\Base_System_MMM" 
+-lang vhdl 
+-bus plbv46 s 
+-reg 3 
+-xps 
+-driver 

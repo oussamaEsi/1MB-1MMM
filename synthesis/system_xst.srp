@@ -1,0 +1,1081 @@
+Release 13.2 - xst O.61xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> 
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input Format                       : MIXED
+Input File Name                    : "system_xst.prj"
+Verilog Include Directory          : {"E:\Code_Doctorat_Virtex5\Base_System_MMM\pcores\" "E:\Xilinx\13.2\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "E:\Xilinx\13.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
+
+---- Target Parameters
+Target Device                      : xc5vlx50tff1136-1
+Output File Name                   : "../implementation/system.ngc"
+
+---- Source Options
+Top Module Name                    : system
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 10000
+
+---- General Options
+Optimization Goal                  : speed
+Netlist Hierarchy                  : as_optimized
+Optimization Effort                : 1
+Hierarchy Separator                : /
+
+---- Other Options
+Cores Search Directories           : {../implementation}
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" in Library work.
+Entity <system> compiled.
+Entity <system> (Architecture <STRUCTURE>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <system> in library <work> (architecture <STRUCTURE>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <system> in library <work> (Architecture <STRUCTURE>).
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'MB_Halted' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'MB_Error' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'LOCKSTEP_MASTER_OUT' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'LOCKSTEP_OUT' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_IP_AWID' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_IP_AWADDR' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_IP_AWLEN' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_IP_AWSIZE' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_IP_AWBURST' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_IP_AWLOCK' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_IP_AWCACHE' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_IP_AWPROT' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_IP_AWQOS' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_IP_AWVALID' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_IP_WDATA' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_IP_WSTRB' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_IP_WLAST' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_IP_WVALID' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_IP_BREADY' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_IP_ARID' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_IP_ARADDR' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_IP_ARLEN' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_IP_ARSIZE' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_IP_ARBURST' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_IP_ARLOCK' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_IP_ARCACHE' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_IP_ARPROT' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_IP_ARQOS' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_IP_ARVALID' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_IP_RREADY' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_DP_AWID' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_DP_AWADDR' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_DP_AWLEN' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_DP_AWSIZE' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_DP_AWBURST' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_DP_AWLOCK' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_DP_AWCACHE' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_DP_AWPROT' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_DP_AWQOS' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_DP_AWVALID' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_DP_WDATA' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_DP_WSTRB' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_DP_WLAST' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_DP_WVALID' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_DP_BREADY' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_DP_ARID' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_DP_ARADDR' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_DP_ARLEN' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_DP_ARSIZE' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_DP_ARBURST' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_DP_ARLOCK' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_DP_ARCACHE' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_DP_ARPROT' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_DP_ARQOS' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_DP_ARVALID' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_DP_RREADY' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_IC_AWID' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_IC_AWADDR' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_IC_AWLEN' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_IC_AWSIZE' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_IC_AWBURST' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_IC_AWLOCK' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_IC_AWCACHE' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_IC_AWPROT' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_IC_AWQOS' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_IC_AWVALID' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_IC_AWUSER' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_IC_WDATA' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_IC_WSTRB' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_IC_WLAST' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_IC_WVALID' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_IC_WUSER' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_IC_BREADY' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_IC_ARID' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_IC_ARADDR' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_IC_ARLEN' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_IC_ARSIZE' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_IC_ARBURST' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_IC_ARLOCK' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_IC_ARCACHE' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_IC_ARPROT' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_IC_ARQOS' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_IC_ARVALID' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_IC_ARUSER' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_IC_RREADY' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_DC_AWID' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_DC_AWADDR' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_DC_AWLEN' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_DC_AWSIZE' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_DC_AWBURST' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_DC_AWLOCK' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_DC_AWCACHE' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_DC_AWPROT' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_DC_AWQOS' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_DC_AWVALID' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_DC_AWUSER' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_DC_WDATA' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_DC_WSTRB' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_DC_WLAST' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_DC_WVALID' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_DC_WUSER' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_DC_BREADY' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_DC_ARID' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_DC_ARADDR' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_DC_ARLEN' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_DC_ARSIZE' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_DC_ARBURST' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_DC_ARLOCK' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_DC_ARCACHE' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_DC_ARPROT' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_DC_ARQOS' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_DC_ARVALID' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_DC_ARUSER' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M_AXI_DC_RREADY' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'Trace_Instruction' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'Trace_Valid_Instr' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'Trace_PC' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'Trace_Reg_Write' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'Trace_Reg_Addr' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'Trace_MSR_Reg' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'Trace_PID_Reg' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'Trace_New_Reg_Value' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'Trace_Exception_Taken' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'Trace_Exception_Kind' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'Trace_Jump_Taken' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'Trace_Delay_Slot' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'Trace_Data_Address' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'Trace_Data_Access' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'Trace_Data_Read' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'Trace_Data_Write' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'Trace_Data_Write_Value' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'Trace_Data_Byte_Enable' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'Trace_DCache_Req' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'Trace_DCache_Hit' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'Trace_DCache_Rdy' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'Trace_DCache_Read' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'Trace_ICache_Req' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'Trace_ICache_Hit' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'Trace_ICache_Rdy' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'Trace_OF_PipeRun' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'Trace_EX_PipeRun' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'Trace_MEM_PipeRun' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'Trace_MB_Halted' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'Trace_Jump_Hit' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL0_S_CLK' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL0_S_READ' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL0_M_CLK' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL0_M_WRITE' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL0_M_DATA' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL0_M_CONTROL' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL1_S_CLK' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL1_S_READ' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL1_M_CLK' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL1_M_WRITE' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL1_M_DATA' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL1_M_CONTROL' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL2_S_CLK' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL2_S_READ' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL2_M_CLK' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL2_M_WRITE' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL2_M_DATA' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL2_M_CONTROL' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL3_S_CLK' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL3_S_READ' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL3_M_CLK' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL3_M_WRITE' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL3_M_DATA' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL3_M_CONTROL' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL4_S_CLK' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL4_S_READ' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL4_M_CLK' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL4_M_WRITE' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL4_M_DATA' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL4_M_CONTROL' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL5_S_CLK' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL5_S_READ' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL5_M_CLK' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL5_M_WRITE' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL5_M_DATA' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL5_M_CONTROL' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL6_S_CLK' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL6_S_READ' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL6_M_CLK' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL6_M_WRITE' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL6_M_DATA' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL6_M_CONTROL' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL7_S_CLK' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL7_S_READ' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL7_M_CLK' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL7_M_WRITE' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL7_M_DATA' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL7_M_CONTROL' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL8_S_CLK' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL8_S_READ' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL8_M_CLK' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL8_M_WRITE' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL8_M_DATA' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL8_M_CONTROL' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL9_S_CLK' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL9_S_READ' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL9_M_CLK' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL9_M_WRITE' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL9_M_DATA' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL9_M_CONTROL' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL10_S_CLK' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL10_S_READ' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL10_M_CLK' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL10_M_WRITE' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL10_M_DATA' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL10_M_CONTROL' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL11_S_CLK' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL11_S_READ' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL11_M_CLK' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL11_M_WRITE' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL11_M_DATA' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL11_M_CONTROL' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL12_S_CLK' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL12_S_READ' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL12_M_CLK' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL12_M_WRITE' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL12_M_DATA' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL12_M_CONTROL' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL13_S_CLK' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL13_S_READ' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL13_M_CLK' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL13_M_WRITE' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL13_M_DATA' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL13_M_CONTROL' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL14_S_CLK' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL14_S_READ' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL14_M_CLK' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL14_M_WRITE' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL14_M_DATA' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL14_M_CONTROL' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL15_S_CLK' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL15_S_READ' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL15_M_CLK' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL15_M_WRITE' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL15_M_DATA' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'FSL15_M_CONTROL' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M0_AXIS_TLAST' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M0_AXIS_TDATA' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M0_AXIS_TVALID' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'S0_AXIS_TREADY' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M1_AXIS_TLAST' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M1_AXIS_TDATA' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M1_AXIS_TVALID' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'S1_AXIS_TREADY' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M2_AXIS_TLAST' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M2_AXIS_TDATA' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M2_AXIS_TVALID' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'S2_AXIS_TREADY' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M3_AXIS_TLAST' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M3_AXIS_TDATA' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M3_AXIS_TVALID' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'S3_AXIS_TREADY' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M4_AXIS_TLAST' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M4_AXIS_TDATA' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M4_AXIS_TVALID' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'S4_AXIS_TREADY' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M5_AXIS_TLAST' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M5_AXIS_TDATA' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M5_AXIS_TVALID' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'S5_AXIS_TREADY' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M6_AXIS_TLAST' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M6_AXIS_TDATA' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M6_AXIS_TVALID' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'S6_AXIS_TREADY' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M7_AXIS_TLAST' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M7_AXIS_TDATA' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M7_AXIS_TVALID' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'S7_AXIS_TREADY' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M8_AXIS_TLAST' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M8_AXIS_TDATA' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M8_AXIS_TVALID' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'S8_AXIS_TREADY' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M9_AXIS_TLAST' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M9_AXIS_TDATA' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M9_AXIS_TVALID' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'S9_AXIS_TREADY' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M10_AXIS_TLAST' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M10_AXIS_TDATA' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M10_AXIS_TVALID' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'S10_AXIS_TREADY' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M11_AXIS_TLAST' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M11_AXIS_TDATA' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M11_AXIS_TVALID' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'S11_AXIS_TREADY' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M12_AXIS_TLAST' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M12_AXIS_TDATA' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M12_AXIS_TVALID' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'S12_AXIS_TREADY' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M13_AXIS_TLAST' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M13_AXIS_TDATA' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M13_AXIS_TVALID' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'S13_AXIS_TREADY' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M14_AXIS_TLAST' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M14_AXIS_TDATA' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M14_AXIS_TVALID' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'S14_AXIS_TREADY' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M15_AXIS_TLAST' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M15_AXIS_TDATA' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'M15_AXIS_TVALID' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'S15_AXIS_TREADY' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'ICACHE_FSL_IN_CLK' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'ICACHE_FSL_IN_READ' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'ICACHE_FSL_OUT_CLK' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'ICACHE_FSL_OUT_WRITE' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'ICACHE_FSL_OUT_DATA' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'ICACHE_FSL_OUT_CONTROL' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'DCACHE_FSL_IN_CLK' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'DCACHE_FSL_IN_READ' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'DCACHE_FSL_OUT_CLK' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'DCACHE_FSL_OUT_WRITE' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'DCACHE_FSL_OUT_DATA' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 1520: Unconnected output port 'DCACHE_FSL_OUT_CONTROL' of component 'microblaze_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2119: Unconnected output port 'PLB_Rst' of component 'mb_plb_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2119: Unconnected output port 'MPLB_Rst' of component 'mb_plb_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2119: Unconnected output port 'PLB_dcrAck' of component 'mb_plb_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2119: Unconnected output port 'PLB_dcrDBus' of component 'mb_plb_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2119: Unconnected output port 'PLB_SaddrAck' of component 'mb_plb_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2119: Unconnected output port 'PLB_SMRdErr' of component 'mb_plb_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2119: Unconnected output port 'PLB_SMWrErr' of component 'mb_plb_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2119: Unconnected output port 'PLB_SMBusy' of component 'mb_plb_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2119: Unconnected output port 'PLB_SrdBTerm' of component 'mb_plb_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2119: Unconnected output port 'PLB_SrdComp' of component 'mb_plb_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2119: Unconnected output port 'PLB_SrdDAck' of component 'mb_plb_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2119: Unconnected output port 'PLB_SrdDBus' of component 'mb_plb_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2119: Unconnected output port 'PLB_SrdWdAddr' of component 'mb_plb_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2119: Unconnected output port 'PLB_Srearbitrate' of component 'mb_plb_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2119: Unconnected output port 'PLB_Sssize' of component 'mb_plb_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2119: Unconnected output port 'PLB_Swait' of component 'mb_plb_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2119: Unconnected output port 'PLB_SwrBTerm' of component 'mb_plb_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2119: Unconnected output port 'PLB_SwrComp' of component 'mb_plb_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2119: Unconnected output port 'PLB_SwrDAck' of component 'mb_plb_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2119: Unconnected output port 'Bus_Error_Det' of component 'mb_plb_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2278: Unconnected output port 'Interrupt' of component 'dlmb_cntlr_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2278: Unconnected output port 'SPLB_CTRL_Sl_addrAck' of component 'dlmb_cntlr_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2278: Unconnected output port 'SPLB_CTRL_Sl_SSize' of component 'dlmb_cntlr_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2278: Unconnected output port 'SPLB_CTRL_Sl_wait' of component 'dlmb_cntlr_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2278: Unconnected output port 'SPLB_CTRL_Sl_rearbitrate' of component 'dlmb_cntlr_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2278: Unconnected output port 'SPLB_CTRL_Sl_wrDAck' of component 'dlmb_cntlr_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2278: Unconnected output port 'SPLB_CTRL_Sl_wrComp' of component 'dlmb_cntlr_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2278: Unconnected output port 'SPLB_CTRL_Sl_rdDBus' of component 'dlmb_cntlr_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2278: Unconnected output port 'SPLB_CTRL_Sl_rdDAck' of component 'dlmb_cntlr_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2278: Unconnected output port 'SPLB_CTRL_Sl_rdComp' of component 'dlmb_cntlr_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2278: Unconnected output port 'SPLB_CTRL_Sl_MBusy' of component 'dlmb_cntlr_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2278: Unconnected output port 'SPLB_CTRL_Sl_MWrErr' of component 'dlmb_cntlr_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2278: Unconnected output port 'SPLB_CTRL_Sl_MRdErr' of component 'dlmb_cntlr_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2278: Unconnected output port 'SPLB_CTRL_Sl_wrBTerm' of component 'dlmb_cntlr_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2278: Unconnected output port 'SPLB_CTRL_Sl_rdWdAddr' of component 'dlmb_cntlr_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2278: Unconnected output port 'SPLB_CTRL_Sl_rdBTerm' of component 'dlmb_cntlr_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2278: Unconnected output port 'SPLB_CTRL_Sl_MIRQ' of component 'dlmb_cntlr_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2278: Unconnected output port 'S_AXI_CTRL_AWREADY' of component 'dlmb_cntlr_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2278: Unconnected output port 'S_AXI_CTRL_WREADY' of component 'dlmb_cntlr_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2278: Unconnected output port 'S_AXI_CTRL_BRESP' of component 'dlmb_cntlr_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2278: Unconnected output port 'S_AXI_CTRL_BVALID' of component 'dlmb_cntlr_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2278: Unconnected output port 'S_AXI_CTRL_ARREADY' of component 'dlmb_cntlr_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2278: Unconnected output port 'S_AXI_CTRL_RDATA' of component 'dlmb_cntlr_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2278: Unconnected output port 'S_AXI_CTRL_RRESP' of component 'dlmb_cntlr_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2278: Unconnected output port 'S_AXI_CTRL_RVALID' of component 'dlmb_cntlr_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2362: Unconnected output port 'Interrupt' of component 'ilmb_cntlr_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2362: Unconnected output port 'SPLB_CTRL_Sl_addrAck' of component 'ilmb_cntlr_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2362: Unconnected output port 'SPLB_CTRL_Sl_SSize' of component 'ilmb_cntlr_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2362: Unconnected output port 'SPLB_CTRL_Sl_wait' of component 'ilmb_cntlr_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2362: Unconnected output port 'SPLB_CTRL_Sl_rearbitrate' of component 'ilmb_cntlr_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2362: Unconnected output port 'SPLB_CTRL_Sl_wrDAck' of component 'ilmb_cntlr_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2362: Unconnected output port 'SPLB_CTRL_Sl_wrComp' of component 'ilmb_cntlr_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2362: Unconnected output port 'SPLB_CTRL_Sl_rdDBus' of component 'ilmb_cntlr_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2362: Unconnected output port 'SPLB_CTRL_Sl_rdDAck' of component 'ilmb_cntlr_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2362: Unconnected output port 'SPLB_CTRL_Sl_rdComp' of component 'ilmb_cntlr_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2362: Unconnected output port 'SPLB_CTRL_Sl_MBusy' of component 'ilmb_cntlr_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2362: Unconnected output port 'SPLB_CTRL_Sl_MWrErr' of component 'ilmb_cntlr_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2362: Unconnected output port 'SPLB_CTRL_Sl_MRdErr' of component 'ilmb_cntlr_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2362: Unconnected output port 'SPLB_CTRL_Sl_wrBTerm' of component 'ilmb_cntlr_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2362: Unconnected output port 'SPLB_CTRL_Sl_rdWdAddr' of component 'ilmb_cntlr_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2362: Unconnected output port 'SPLB_CTRL_Sl_rdBTerm' of component 'ilmb_cntlr_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2362: Unconnected output port 'SPLB_CTRL_Sl_MIRQ' of component 'ilmb_cntlr_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2362: Unconnected output port 'S_AXI_CTRL_AWREADY' of component 'ilmb_cntlr_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2362: Unconnected output port 'S_AXI_CTRL_WREADY' of component 'ilmb_cntlr_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2362: Unconnected output port 'S_AXI_CTRL_BRESP' of component 'ilmb_cntlr_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2362: Unconnected output port 'S_AXI_CTRL_BVALID' of component 'ilmb_cntlr_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2362: Unconnected output port 'S_AXI_CTRL_ARREADY' of component 'ilmb_cntlr_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2362: Unconnected output port 'S_AXI_CTRL_RDATA' of component 'ilmb_cntlr_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2362: Unconnected output port 'S_AXI_CTRL_RRESP' of component 'ilmb_cntlr_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2362: Unconnected output port 'S_AXI_CTRL_RVALID' of component 'ilmb_cntlr_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2464: Unconnected output port 'Interrupt' of component 'rs232_uart_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2513: Unconnected output port 'GenerateOut0' of component 'xps_timer_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2513: Unconnected output port 'GenerateOut1' of component 'xps_timer_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2513: Unconnected output port 'PWM0' of component 'xps_timer_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2513: Unconnected output port 'Interrupt' of component 'xps_timer_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2566: Unconnected output port 'CLKOUT1' of component 'clock_generator_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2566: Unconnected output port 'CLKOUT2' of component 'clock_generator_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2566: Unconnected output port 'CLKOUT3' of component 'clock_generator_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2566: Unconnected output port 'CLKOUT4' of component 'clock_generator_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2566: Unconnected output port 'CLKOUT5' of component 'clock_generator_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2566: Unconnected output port 'CLKOUT6' of component 'clock_generator_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2566: Unconnected output port 'CLKOUT7' of component 'clock_generator_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2566: Unconnected output port 'CLKOUT8' of component 'clock_generator_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2566: Unconnected output port 'CLKOUT9' of component 'clock_generator_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2566: Unconnected output port 'CLKOUT10' of component 'clock_generator_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2566: Unconnected output port 'CLKOUT11' of component 'clock_generator_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2566: Unconnected output port 'CLKOUT12' of component 'clock_generator_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2566: Unconnected output port 'CLKOUT13' of component 'clock_generator_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2566: Unconnected output port 'CLKOUT14' of component 'clock_generator_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2566: Unconnected output port 'CLKOUT15' of component 'clock_generator_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2566: Unconnected output port 'CLKFBOUT' of component 'clock_generator_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2566: Unconnected output port 'PSDONE' of component 'clock_generator_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2595: Unconnected output port 'Interrupt' of component 'mdm_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2595: Unconnected output port 'S_AXI_AWREADY' of component 'mdm_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2595: Unconnected output port 'S_AXI_WREADY' of component 'mdm_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2595: Unconnected output port 'S_AXI_BRESP' of component 'mdm_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2595: Unconnected output port 'S_AXI_BVALID' of component 'mdm_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2595: Unconnected output port 'S_AXI_ARREADY' of component 'mdm_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2595: Unconnected output port 'S_AXI_RDATA' of component 'mdm_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2595: Unconnected output port 'S_AXI_RRESP' of component 'mdm_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2595: Unconnected output port 'S_AXI_RVALID' of component 'mdm_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2595: Unconnected output port 'Dbg_Clk_1' of component 'mdm_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2595: Unconnected output port 'Dbg_TDI_1' of component 'mdm_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2595: Unconnected output port 'Dbg_Reg_En_1' of component 'mdm_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2595: Unconnected output port 'Dbg_Capture_1' of component 'mdm_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2595: Unconnected output port 'Dbg_Shift_1' of component 'mdm_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2595: Unconnected output port 'Dbg_Update_1' of component 'mdm_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2595: Unconnected output port 'Dbg_Rst_1' of component 'mdm_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2595: Unconnected output port 'Dbg_Clk_2' of component 'mdm_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2595: Unconnected output port 'Dbg_TDI_2' of component 'mdm_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2595: Unconnected output port 'Dbg_Reg_En_2' of component 'mdm_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2595: Unconnected output port 'Dbg_Capture_2' of component 'mdm_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2595: Unconnected output port 'Dbg_Shift_2' of component 'mdm_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2595: Unconnected output port 'Dbg_Update_2' of component 'mdm_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2595: Unconnected output port 'Dbg_Rst_2' of component 'mdm_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2595: Unconnected output port 'Dbg_Clk_3' of component 'mdm_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2595: Unconnected output port 'Dbg_TDI_3' of component 'mdm_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2595: Unconnected output port 'Dbg_Reg_En_3' of component 'mdm_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2595: Unconnected output port 'Dbg_Capture_3' of component 'mdm_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2595: Unconnected output port 'Dbg_Shift_3' of component 'mdm_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2595: Unconnected output port 'Dbg_Update_3' of component 'mdm_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2595: Unconnected output port 'Dbg_Rst_3' of component 'mdm_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2595: Unconnected output port 'Dbg_Clk_4' of component 'mdm_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2595: Unconnected output port 'Dbg_TDI_4' of component 'mdm_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2595: Unconnected output port 'Dbg_Reg_En_4' of component 'mdm_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2595: Unconnected output port 'Dbg_Capture_4' of component 'mdm_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2595: Unconnected output port 'Dbg_Shift_4' of component 'mdm_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2595: Unconnected output port 'Dbg_Update_4' of component 'mdm_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2595: Unconnected output port 'Dbg_Rst_4' of component 'mdm_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2595: Unconnected output port 'Dbg_Clk_5' of component 'mdm_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2595: Unconnected output port 'Dbg_TDI_5' of component 'mdm_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2595: Unconnected output port 'Dbg_Reg_En_5' of component 'mdm_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2595: Unconnected output port 'Dbg_Capture_5' of component 'mdm_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2595: Unconnected output port 'Dbg_Shift_5' of component 'mdm_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2595: Unconnected output port 'Dbg_Update_5' of component 'mdm_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2595: Unconnected output port 'Dbg_Rst_5' of component 'mdm_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2595: Unconnected output port 'Dbg_Clk_6' of component 'mdm_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2595: Unconnected output port 'Dbg_TDI_6' of component 'mdm_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2595: Unconnected output port 'Dbg_Reg_En_6' of component 'mdm_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2595: Unconnected output port 'Dbg_Capture_6' of component 'mdm_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2595: Unconnected output port 'Dbg_Shift_6' of component 'mdm_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2595: Unconnected output port 'Dbg_Update_6' of component 'mdm_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2595: Unconnected output port 'Dbg_Rst_6' of component 'mdm_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2595: Unconnected output port 'Dbg_Clk_7' of component 'mdm_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2595: Unconnected output port 'Dbg_TDI_7' of component 'mdm_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2595: Unconnected output port 'Dbg_Reg_En_7' of component 'mdm_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2595: Unconnected output port 'Dbg_Capture_7' of component 'mdm_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2595: Unconnected output port 'Dbg_Shift_7' of component 'mdm_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2595: Unconnected output port 'Dbg_Update_7' of component 'mdm_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2595: Unconnected output port 'Dbg_Rst_7' of component 'mdm_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2595: Unconnected output port 'bscan_tdi' of component 'mdm_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2595: Unconnected output port 'bscan_reset' of component 'mdm_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2595: Unconnected output port 'bscan_shift' of component 'mdm_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2595: Unconnected output port 'bscan_update' of component 'mdm_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2595: Unconnected output port 'bscan_capture' of component 'mdm_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2595: Unconnected output port 'bscan_sel1' of component 'mdm_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2595: Unconnected output port 'bscan_drck1' of component 'mdm_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2595: Unconnected output port 'Ext_JTAG_DRCK' of component 'mdm_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2595: Unconnected output port 'Ext_JTAG_RESET' of component 'mdm_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2595: Unconnected output port 'Ext_JTAG_SEL' of component 'mdm_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2595: Unconnected output port 'Ext_JTAG_CAPTURE' of component 'mdm_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2595: Unconnected output port 'Ext_JTAG_SHIFT' of component 'mdm_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2595: Unconnected output port 'Ext_JTAG_UPDATE' of component 'mdm_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2595: Unconnected output port 'Ext_JTAG_TDI' of component 'mdm_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2744: Unconnected output port 'RstcPPCresetcore_0' of component 'proc_sys_reset_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2744: Unconnected output port 'RstcPPCresetchip_0' of component 'proc_sys_reset_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2744: Unconnected output port 'RstcPPCresetsys_0' of component 'proc_sys_reset_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2744: Unconnected output port 'RstcPPCresetcore_1' of component 'proc_sys_reset_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2744: Unconnected output port 'RstcPPCresetchip_1' of component 'proc_sys_reset_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2744: Unconnected output port 'RstcPPCresetsys_1' of component 'proc_sys_reset_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2744: Unconnected output port 'Peripheral_Reset' of component 'proc_sys_reset_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2744: Unconnected output port 'Interconnect_aresetn' of component 'proc_sys_reset_0_wrapper'.
+WARNING:Xst:753 - "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd" line 2744: Unconnected output port 'Peripheral_aresetn' of component 'proc_sys_reset_0_wrapper'.
+Entity <system> analyzed. Unit <system> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <system>.
+    Related source file is "E:/Code_Doctorat_Virtex5/Base_System_MMM/hdl/system.vhd".
+Unit <system> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <../implementation/microblaze_0_wrapper.ngc>.
+Reading core <../implementation/mb_plb_wrapper.ngc>.
+Reading core <../implementation/ilmb_wrapper.ngc>.
+Reading core <../implementation/dlmb_wrapper.ngc>.
+Reading core <../implementation/dlmb_cntlr_wrapper.ngc>.
+Reading core <../implementation/ilmb_cntlr_wrapper.ngc>.
+Reading core <../implementation/lmb_bram_wrapper.ngc>.
+Reading core <../implementation/rs232_uart_0_wrapper.ngc>.
+Reading core <../implementation/xps_timer_0_wrapper.ngc>.
+Reading core <../implementation/clock_generator_0_wrapper.ngc>.
+Reading core <../implementation/mdm_0_wrapper.ngc>.
+Reading core <../implementation/proc_sys_reset_0_wrapper.ngc>.
+Reading core <../implementation/ip_mmm256_opt_0_wrapper.ngc>.
+Loading core <microblaze_0_wrapper> for timing and area information for instance <microblaze_0>.
+Loading core <mb_plb_wrapper> for timing and area information for instance <mb_plb>.
+Loading core <ilmb_wrapper> for timing and area information for instance <ilmb>.
+Loading core <dlmb_wrapper> for timing and area information for instance <dlmb>.
+Loading core <dlmb_cntlr_wrapper> for timing and area information for instance <dlmb_cntlr>.
+Loading core <ilmb_cntlr_wrapper> for timing and area information for instance <ilmb_cntlr>.
+Loading core <lmb_bram_wrapper> for timing and area information for instance <lmb_bram>.
+Loading core <rs232_uart_0_wrapper> for timing and area information for instance <RS232_Uart_0>.
+Loading core <xps_timer_0_wrapper> for timing and area information for instance <xps_timer_0>.
+Loading core <clock_generator_0_wrapper> for timing and area information for instance <clock_generator_0>.
+Loading core <mdm_0_wrapper> for timing and area information for instance <mdm_0>.
+Loading core <proc_sys_reset_0_wrapper> for timing and area information for instance <proc_sys_reset_0>.
+Loading core <ip_mmm256_opt_0_wrapper> for timing and area information for instance <ip_mmm256_opt_0>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <system> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_28> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_28_1> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_i_0> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_i_0_1> 
+INFO:Xst:2260 - The FF/Latch <mb_plb/GEN_MPLB_RST[1].I_MPLB_RST> in Unit <mb_plb> is equivalent to the following 6 FFs/Latches : <mb_plb/GEN_MPLB_RST[0].I_MPLB_RST> <mb_plb/GEN_SPLB_RST[3].I_SPLB_RST> <mb_plb/GEN_SPLB_RST[2].I_SPLB_RST> <mb_plb/GEN_SPLB_RST[1].I_SPLB_RST> <mb_plb/GEN_SPLB_RST[0].I_SPLB_RST> <mb_plb/I_PLB_RST> 
+INFO:Xst:2260 - The FF/Latch <xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[21].TCSR0_FF_I> in Unit <xps_timer_0> is equivalent to the following FF/Latch : <xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[21].TCSR1_FF_I> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_28> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_28_1> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_i_0> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_i_0_1> 
+INFO:Xst:2260 - The FF/Latch <mb_plb/GEN_MPLB_RST[1].I_MPLB_RST> in Unit <mb_plb> is equivalent to the following 6 FFs/Latches : <mb_plb/GEN_MPLB_RST[0].I_MPLB_RST> <mb_plb/GEN_SPLB_RST[3].I_SPLB_RST> <mb_plb/GEN_SPLB_RST[2].I_SPLB_RST> <mb_plb/GEN_SPLB_RST[1].I_SPLB_RST> <mb_plb/GEN_SPLB_RST[0].I_SPLB_RST> <mb_plb/I_PLB_RST> 
+INFO:Xst:2260 - The FF/Latch <xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[21].TCSR0_FF_I> in Unit <xps_timer_0> is equivalent to the following FF/Latch : <xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[21].TCSR1_FF_I> 
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+Top Level Output File Name         : ../implementation/system.ngc
+Output Format                      : ngc
+Optimization Goal                  : speed
+Keep Hierarchy                     : no
+
+Design Statistics
+# IOs                              : 4
+
+Cell Usage :
+# BELS                             : 4572
+#      GND                         : 20
+#      INV                         : 57
+#      LUT1                        : 237
+#      LUT2                        : 251
+#      LUT3                        : 548
+#      LUT4                        : 546
+#      LUT5                        : 456
+#      LUT6                        : 796
+#      LUT6_2                      : 79
+#      MULT_AND                    : 2
+#      MUXCY                       : 368
+#      MUXCY_L                     : 362
+#      MUXF7                       : 151
+#      VCC                         : 15
+#      XOR2                        : 128
+#      XORCY                       : 556
+# FlipFlops/Latches                : 3767
+#      FD                          : 77
+#      FDC                         : 451
+#      FDC_1                       : 5
+#      FDCE                        : 294
+#      FDE                         : 615
+#      FDE_1                       : 8
+#      FDP                         : 38
+#      FDR                         : 1147
+#      FDRE                        : 937
+#      FDRE_1                      : 1
+#      FDRS                        : 13
+#      FDRSE                       : 71
+#      FDS                         : 51
+#      FDSE                        : 55
+#      LD                          : 4
+# RAMS                             : 51
+#      RAM32M                      : 16
+#      RAMB18                      : 3
+#      RAMB36_EXP                  : 32
+# Shift Registers                  : 98
+#      SRL16                       : 1
+#      SRL16E                      : 32
+#      SRLC16E                     : 65
+# Clock Buffers                    : 5
+#      BUFG                        : 5
+# IO Buffers                       : 4
+#      IBUF                        : 3
+#      OBUF                        : 1
+# DSPs                             : 11
+#      DSP48E                      : 11
+# Others                           : 2
+#      BSCAN_VIRTEX5               : 1
+#      PLL_ADV                     : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 5vlx50tff1136-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:            3767  out of  28800    13%  
+ Number of Slice LUTs:                 3132  out of  28800    10%  
+    Number used as Logic:              2970  out of  28800    10%  
+    Number used as Memory:              162  out of   7680     2%  
+       Number used as RAM:               64
+       Number used as SRL:               98
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   5461
+   Number with an unused Flip Flop:    1694  out of   5461    31%  
+   Number with an unused LUT:          2329  out of   5461    42%  
+   Number of fully used LUT-FF pairs:  1438  out of   5461    26%  
+   Number of unique control sets:       277
+
+IO Utilization: 
+ Number of IOs:                           4
+ Number of bonded IOBs:                   4  out of    480     0%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:               34  out of     60    56%  
+    Number using Block RAM only:         34
+ Number of BUFG/BUFGCTRLs:                5  out of     32    15%  
+ Number of DSP48Es:                      11  out of     48    22%  
+ Number of PLL_ADVs:                      1  out of      6    16%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+---------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------+-------+
+Clock Signal                                                                                                                                 | Clock buffer(FF name)                                                  | Load  |
+---------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------+-------+
+clock_generator_0/clock_generator_0/SIG_PLL0_CLKOUT0                                                                                         | BUFG                                                                   | 3673  |
+mdm_0/mdm_0/drck_i                                                                                                                           | BUFG                                                                   | 208   |
+mdm_0/bscan_update1                                                                                                                          | BUFG                                                                   | 42    |
+ip_mmm256_opt_0/ip_mmm256_opt_0/USER_LOGIC_I/U/U2/N1_addr_A1_not0001(ip_mmm256_opt_0/ip_mmm256_opt_0/USER_LOGIC_I/U/U2/N1_addr_A1_not00011:O)| NONE(*)(ip_mmm256_opt_0/ip_mmm256_opt_0/USER_LOGIC_I/U/U2/N1_addr_A1_3)| 4     |
+---------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------+-------+
+Control Signal                                                                                                                                                                                                                      | Buffer(FF name)                                                                                                            | Load  |
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------+-------+
+ip_mmm256_opt_0/ip_mmm256_opt_0/USER_LOGIC_I/U/U1/op_in_inv(ip_mmm256_opt_0/ip_mmm256_opt_0/USER_LOGIC_I/U/U6/UU5/reset_inv1_INV_0:O)                                                                                               | NONE(ip_mmm256_opt_0/ip_mmm256_opt_0/USER_LOGIC_I/U/N2_TS_0)                                                               | 471   |
+lmb_bram/lmb_bram/net_gnd0(lmb_bram/lmb_bram/XST_GND:G)                                                                                                                                                                             | NONE(lmb_bram/lmb_bram/ramb36_0)                                                                                           | 128   |
+ip_mmm256_opt_0/ip_mmm256_opt_0/USER_LOGIC_I/N_reset_write_A_B(ip_mmm256_opt_0/ip_mmm256_opt_0/USER_LOGIC_I/N_reset_write_A_B1:O)                                                                                                   | NONE(ip_mmm256_opt_0/ip_mmm256_opt_0/USER_LOGIC_I/U/U1/Addr_W_AB_0)                                                        | 70    |
+ip_mmm256_opt_0/ip_mmm256_opt_0/USER_LOGIC_I/N_reset_write_Cts(ip_mmm256_opt_0/ip_mmm256_opt_0/USER_LOGIC_I/N_reset_write_Cts1:O)                                                                                                   | NONE(ip_mmm256_opt_0/ip_mmm256_opt_0/USER_LOGIC_I/U/U1/Addr_WM_0)                                                          | 70    |
+ip_mmm256_opt_0/ip_mmm256_opt_0/USER_LOGIC_I/N_RESET_IP(ip_mmm256_opt_0/ip_mmm256_opt_0/USER_LOGIC_I/N_RESET_IP1:O)                                                                                                                 | NONE(ip_mmm256_opt_0/ip_mmm256_opt_0/USER_LOGIC_I/U/N1_D_0)                                                                | 64    |
+ip_mmm256_opt_0/ip_mmm256_opt_0/USER_LOGIC_I/U/N_valid_result1_inv(ip_mmm256_opt_0/ip_mmm256_opt_0/USER_LOGIC_I/U/N_valid_result1_inv1_INV_0:O)                                                                                     | NONE(ip_mmm256_opt_0/ip_mmm256_opt_0/USER_LOGIC_I/U/Exp_result_0)                                                          | 32    |
+ip_mmm256_opt_0/ip_mmm256_opt_0/USER_LOGIC_I/U/N_wr_en_fifo_inv(ip_mmm256_opt_0/ip_mmm256_opt_0/USER_LOGIC_I/U/N_wr_en_fifo_inv1_INV_0:O)                                                                                           | NONE(ip_mmm256_opt_0/ip_mmm256_opt_0/USER_LOGIC_I/U/N1_TS_0)                                                               | 32    |
+mdm_0/mdm_0/MDM_Core_I1/Config_Reg_Acst_inv(mdm_0/mdm_0/MDM_Core_I1/Config_Reg_Acst_inv1_INV_0:O)                                                                                                                                   | NONE(mdm_0/mdm_0/MDM_Core_I1/Config_Reg_0)                                                                                 | 23    |
+mdm_0/mdm_0/MDM_Core_I1/SEL_inv(mdm_0/mdm_0/MDM_Core_I1/SEL_inv1_INV_0:O)                                                                                                                                                           | NONE(mdm_0/mdm_0/MDM_Core_I1/PORT_Selector_0)                                                                              | 12    |
+ip_mmm256_opt_0/ip_mmm256_opt_0/USER_LOGIC_I/U/U4/U1/U4/reset_inv(ip_mmm256_opt_0/ip_mmm256_opt_0/USER_LOGIC_I/U/U4/U1/U4/reset_inv1:O)                                                                                             | NONE(ip_mmm256_opt_0/ip_mmm256_opt_0/USER_LOGIC_I/U/U4/U1/U4/dout)                                                         | 2     |
+ip_mmm256_opt_0/ip_mmm256_opt_0/USER_LOGIC_I/U/U6/U1/U4/reset_inv(ip_mmm256_opt_0/ip_mmm256_opt_0/USER_LOGIC_I/U/U6/U1/U4/reset_inv1:O)                                                                                             | NONE(ip_mmm256_opt_0/ip_mmm256_opt_0/USER_LOGIC_I/U/U6/U1/U4/dout)                                                         | 2     |
+microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Command_Reg_Rst(microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Command_Reg_Rst:Q)    | NONE(microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/command_reg_0)         | 2     |
+mb_plb/SPLB_Rst<3>(mb_plb/mb_plb/GEN_SPLB_RST[3].I_SPLB_RST:Q)                                                                                                                                                                      | NONE(ip_mmm256_opt_0/ip_mmm256_opt_0/USER_LOGIC_I/N_CE)                                                                    | 1     |
+mdm_0/bscan_update1(mdm_0/mdm_0/Use_Virtex5.BSCAN_VIRTEX5_I:UPDATE)                                                                                                                                                                 | BUFG(microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/running_clock)         | 1     |
+mdm_0/mdm_0/MDM_Core_I1/JTAG_CONTROL_I/data_cmd_inv(mdm_0/mdm_0/MDM_Core_I1/JTAG_CONTROL_I/data_cmd_inv1_INV_0:O)                                                                                                                   | NONE(mdm_0/mdm_0/MDM_Core_I1/JTAG_CONTROL_I/execute)                                                                       | 1     |
+mdm_0/mdm_0/MDM_Core_I1/JTAG_CONTROL_I/local_sel_n3(mdm_0/mdm_0/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[4].LUT_Delay:O)                                                                                                            | NONE(mdm_0/mdm_0/MDM_Core_I1/JTAG_CONTROL_I/FDC_I)                                                                         | 1     |
+microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/continue_from_brk(microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/continue_from_brk:Q)| NONE(microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/continue_from_brk_TClk)| 1     |
+microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/force_stop_cmd_i(microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/force_stop_cmd_i:Q)  | NONE(microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/force_stop_TClk)       | 1     |
+microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/normal_stop_cmd_i(microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/normal_stop_cmd_i:Q)| NONE(microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/normal_stop_TClk)      | 1     |
+microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/start_single_step(microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/start_single_step:Q)| NONE(microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/single_Step_TClk)      | 1     |
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 9.550ns (Maximum Frequency: 104.712MHz)
+   Minimum input arrival time before clock: 2.750ns
+   Maximum output required time after clock: 8.043ns
+   Maximum combinational path delay: 1.397ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock_generator_0/clock_generator_0/SIG_PLL0_CLKOUT0'
+  Clock period: 9.550ns (frequency: 104.712MHz)
+  Total number of paths / destination ports: 1393149 / 11174
+-------------------------------------------------------------------------
+Delay:               9.550ns (Levels of Logic = 2)
+  Source:            ip_mmm256_opt_0/ip_mmm256_opt_0/USER_LOGIC_I/U/U4/U1/U1/blk00000006 (DSP)
+  Destination:       ip_mmm256_opt_0/ip_mmm256_opt_0/USER_LOGIC_I/U/U4/U1/U1/blk00000003 (DSP)
+  Source Clock:      clock_generator_0/clock_generator_0/SIG_PLL0_CLKOUT0 rising
+  Destination Clock: clock_generator_0/clock_generator_0/SIG_PLL0_CLKOUT0 rising
+
+  Data Path: ip_mmm256_opt_0/ip_mmm256_opt_0/USER_LOGIC_I/U/U4/U1/U1/blk00000006 to ip_mmm256_opt_0/ip_mmm256_opt_0/USER_LOGIC_I/U/U4/U1/U1/blk00000003
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     DSP48E:CLK->PCOUT47    1   4.223   0.000  blk00000006 (sig00000068)
+     DSP48E:PCIN47->PCOUT47    1   2.013   0.000  blk00000005 (sig00000098)
+     DSP48E:PCIN47->PCOUT47    1   2.013   0.000  blk00000004 (sig000000c8)
+     DSP48E:PCIN47             1.301          blk00000003
+    ----------------------------------------
+    Total                      9.550ns (9.550ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'mdm_0/mdm_0/drck_i'
+  Clock period: 6.198ns (frequency: 161.342MHz)
+  Total number of paths / destination ports: 303 / 251
+-------------------------------------------------------------------------
+Delay:               3.099ns (Levels of Logic = 4)
+  Source:            mdm_0/mdm_0/MDM_Core_I1/JTAG_CONTROL_I/SYNC_FDRE (FF)
+  Destination:       microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/shift_count_7 (FF)
+  Source Clock:      mdm_0/mdm_0/drck_i falling
+  Destination Clock: mdm_0/mdm_0/drck_i rising
+
+  Data Path: mdm_0/mdm_0/MDM_Core_I1/JTAG_CONTROL_I/SYNC_FDRE to microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/shift_count_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE_1:C->Q           1   0.467   0.973  JTAG_CONTROL_I/SYNC_FDRE (JTAG_CONTROL_I/sync)
+     LUT6:I1->O            9   0.094   0.380  JTAG_CONTROL_I/shifting_Data (Dbg_Shift_7)
+     end scope: 'mdm_0/MDM_Core_I1'
+     end scope: 'mdm_0'
+     begin scope: 'microblaze_0'
+     INV:I->O              8   0.238   0.374  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Shift_inv1_INV_0 (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Shift_inv)
+     FDR:R                     0.573          microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/shift_count_0
+    ----------------------------------------
+    Total                      3.099ns (1.372ns logic, 1.727ns route)
+                                       (44.3% logic, 55.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'mdm_0/bscan_update1'
+  Clock period: 6.602ns (frequency: 151.469MHz)
+  Total number of paths / destination ports: 329 / 50
+-------------------------------------------------------------------------
+Delay:               3.301ns (Levels of Logic = 5)
+  Source:            mdm_0/mdm_0/MDM_Core_I1/JTAG_CONTROL_I/FDC_I (FF)
+  Destination:       microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/control_reg_0 (FF)
+  Source Clock:      mdm_0/bscan_update1 falling
+  Destination Clock: mdm_0/bscan_update1 rising
+
+  Data Path: mdm_0/mdm_0/MDM_Core_I1/JTAG_CONTROL_I/FDC_I to microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/control_reg_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC_1:C->Q           14   0.467   0.647  JTAG_CONTROL_I/FDC_I (JTAG_CONTROL_I/data_cmd)
+     LUT2:I0->O            6   0.094   0.816  JTAG_CONTROL_I/Dbg_Reg_En_I<0>1 (Dbg_Reg_En_0<0>)
+     end scope: 'mdm_0/MDM_Core_I1'
+     end scope: 'mdm_0'
+     begin scope: 'microblaze_0'
+     LUT4:I0->O            4   0.094   0.496  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Command_Reg_En31 (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Command_Reg_En_bdd4)
+     LUT5:I4->O            9   0.094   0.380  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Control_Reg_En1 (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Control_Reg_En)
+     FDCE:CE                   0.213          microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/force_stop_TClk
+    ----------------------------------------
+    Total                      3.301ns (0.962ns logic, 2.339ns route)
+                                       (29.1% logic, 70.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'mdm_0/mdm_0/drck_i'
+  Total number of paths / destination ports: 118 / 98
+-------------------------------------------------------------------------
+Offset:              2.750ns (Levels of Logic = 4)
+  Source:            mdm_0/mdm_0/Use_Virtex5.BSCAN_VIRTEX5_I:SHIFT (PAD)
+  Destination:       microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/shift_count_7 (FF)
+  Destination Clock: mdm_0/mdm_0/drck_i rising
+
+  Data Path: mdm_0/mdm_0/Use_Virtex5.BSCAN_VIRTEX5_I:SHIFT to microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/shift_count_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    BSCAN_VIRTEX5:SHIFT    5   0.000   0.000  mdm_0/Use_Virtex5.BSCAN_VIRTEX5_I (bscan_shift)
+     begin scope: 'mdm_0/MDM_Core_I1'
+     LUT6:I0->O            9   0.094   0.380  JTAG_CONTROL_I/shifting_Data (Dbg_Shift_7)
+     end scope: 'mdm_0/MDM_Core_I1'
+     end scope: 'mdm_0'
+     begin scope: 'microblaze_0'
+     INV:I->O              8   0.238   0.374  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Shift_inv1_INV_0 (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Shift_inv)
+     FDR:R                     0.573          microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/shift_count_0
+    ----------------------------------------
+    Total                      2.750ns (1.996ns logic, 0.754ns route)
+                                       (72.6% logic, 27.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clock_generator_0/clock_generator_0/SIG_PLL0_CLKOUT0'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              1.733ns (Levels of Logic = 3)
+  Source:            fpga_0_rst_1_sys_rst_pin (PAD)
+  Destination:       proc_sys_reset_0/proc_sys_reset_0/EXT_LPF/exr_d1 (FF)
+  Destination Clock: clock_generator_0/clock_generator_0/SIG_PLL0_CLKOUT0 rising
+
+  Data Path: fpga_0_rst_1_sys_rst_pin to proc_sys_reset_0/proc_sys_reset_0/EXT_LPF/exr_d1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   0.818   0.341  fpga_0_rst_1_sys_rst_pin_IBUF (fpga_0_rst_1_sys_rst_pin_IBUF)
+     begin scope: 'proc_sys_reset_0'
+     INV:I->O              1   0.238   0.336  proc_sys_reset_0/EXT_LPF/exr_d1_or000011_INV_0 (proc_sys_reset_0/EXT_LPF/exr_d1_or00001)
+     FDS:D                    -0.018          proc_sys_reset_0/EXT_LPF/exr_d1
+    ----------------------------------------
+    Total                      1.733ns (1.056ns logic, 0.677ns route)
+                                       (60.9% logic, 39.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'mdm_0/bscan_update1'
+  Total number of paths / destination ports: 20 / 20
+-------------------------------------------------------------------------
+Offset:              1.788ns (Levels of Logic = 2)
+  Source:            mdm_0/mdm_0/Use_Virtex5.BSCAN_VIRTEX5_I:SEL (PAD)
+  Destination:       mdm_0/mdm_0/MDM_Core_I1/JTAG_CONTROL_I/command_1_0 (FF)
+  Destination Clock: mdm_0/bscan_update1 rising
+
+  Data Path: mdm_0/mdm_0/Use_Virtex5.BSCAN_VIRTEX5_I:SEL to mdm_0/mdm_0/MDM_Core_I1/JTAG_CONTROL_I/command_1_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    BSCAN_VIRTEX5:SEL      8   0.000   0.000  mdm_0/Use_Virtex5.BSCAN_VIRTEX5_I (mdm_0/sel)
+     begin scope: 'mdm_0/MDM_Core_I1'
+     LUT6:I0->O            8   0.094   0.374  JTAG_CONTROL_I/command_1_and00001 (JTAG_CONTROL_I/command_1_and0000)
+     FDE:CE                    0.213          JTAG_CONTROL_I/command_1_7
+    ----------------------------------------
+    Total                      1.788ns (1.414ns logic, 0.374ns route)
+                                       (79.1% logic, 20.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clock_generator_0/clock_generator_0/SIG_PLL0_CLKOUT0'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              3.259ns (Levels of Logic = 2)
+  Source:            RS232_Uart_0/RS232_Uart_0/UARTLITE_CORE_I/UARTLITE_TX_I/TX (FF)
+  Destination:       fpga_0_RS232_Uart_0_TX_pin (PAD)
+  Source Clock:      clock_generator_0/clock_generator_0/SIG_PLL0_CLKOUT0 rising
+
+  Data Path: RS232_Uart_0/RS232_Uart_0/UARTLITE_CORE_I/UARTLITE_TX_I/TX to fpga_0_RS232_Uart_0_TX_pin
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS:C->Q              1   0.471   0.336  RS232_Uart_0/UARTLITE_CORE_I/UARTLITE_TX_I/TX (TX)
+     end scope: 'RS232_Uart_0'
+     OBUF:I->O                 2.452          fpga_0_RS232_Uart_0_TX_pin_OBUF (fpga_0_RS232_Uart_0_TX_pin)
+    ----------------------------------------
+    Total                      3.259ns (2.923ns logic, 0.336ns route)
+                                       (89.7% logic, 10.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'mdm_0/mdm_0/drck_i'
+  Total number of paths / destination ports: 124 / 1
+-------------------------------------------------------------------------
+Offset:              8.043ns (Levels of Logic = 11)
+  Source:            microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/shift_count_0 (FF)
+  Destination:       mdm_0/mdm_0/Use_Virtex5.BSCAN_VIRTEX5_I:TDO (PAD)
+  Source Clock:      mdm_0/mdm_0/drck_i rising
+
+  Data Path: microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/shift_count_0 to mdm_0/mdm_0/Use_Virtex5.BSCAN_VIRTEX5_I:TDO
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             26   0.471   1.195  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/shift_count_0 (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/shift_count<0>)
+     LUT6:I0->O            1   0.094   0.973  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_TDO_Data_Reg_111 (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_TDO_Data_Reg_111)
+     LUT6:I1->O            1   0.094   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_TDO_Data_Reg_6 (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_TDO_Data_Reg_6)
+     MUXF7:I1->O           1   0.254   1.069  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_TDO_Data_Reg_5_f7 (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_TDO_Data_Reg_5_f7)
+     LUT6:I0->O            1   0.094   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/TDO1422 (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/TDO1422)
+     MUXF7:I0->O           1   0.251   0.973  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/TDO142_f7 (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/TDO142)
+     LUT5:I0->O            1   0.094   1.069  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/TDO1444 (DBG_TDO)
+     end scope: 'microblaze_0'
+     begin scope: 'mdm_0'
+     begin scope: 'mdm_0/MDM_Core_I1'
+     LUT6:I0->O            1   0.094   0.000  TDO_i901 (TDO_i901)
+     MUXF7:I0->O           1   0.251   0.973  TDO_i90_f7 (TDO_i90)
+     LUT5:I0->O            0   0.094   0.000  TDO_i227 (TDO)
+     end scope: 'mdm_0/MDM_Core_I1'
+    BSCAN_VIRTEX5:TDO          0.000          mdm_0/Use_Virtex5.BSCAN_VIRTEX5_I
+    ----------------------------------------
+    Total                      8.043ns (1.791ns logic, 6.252ns route)
+                                       (22.3% logic, 77.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'mdm_0/bscan_update1'
+  Total number of paths / destination ports: 74 / 1
+-------------------------------------------------------------------------
+Offset:              6.391ns (Levels of Logic = 11)
+  Source:            mdm_0/mdm_0/MDM_Core_I1/JTAG_CONTROL_I/FDC_I (FF)
+  Destination:       mdm_0/mdm_0/Use_Virtex5.BSCAN_VIRTEX5_I:TDO (PAD)
+  Source Clock:      mdm_0/bscan_update1 falling
+
+  Data Path: mdm_0/mdm_0/MDM_Core_I1/JTAG_CONTROL_I/FDC_I to mdm_0/mdm_0/Use_Virtex5.BSCAN_VIRTEX5_I:TDO
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC_1:C->Q           14   0.467   0.647  JTAG_CONTROL_I/FDC_I (JTAG_CONTROL_I/data_cmd)
+     LUT2:I0->O            6   0.094   1.000  JTAG_CONTROL_I/Dbg_Reg_En_I<4>1 (Dbg_Reg_En_0<4>)
+     end scope: 'mdm_0/MDM_Core_I1'
+     end scope: 'mdm_0'
+     begin scope: 'microblaze_0'
+     LUT5:I0->O            1   0.094   0.710  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/TDO1399 (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/TDO1399)
+     LUT5:I2->O            1   0.094   0.710  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/TDO1428 (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/TDO1428)
+     LUT5:I2->O            1   0.094   1.069  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/TDO1444 (DBG_TDO)
+     end scope: 'microblaze_0'
+     begin scope: 'mdm_0'
+     begin scope: 'mdm_0/MDM_Core_I1'
+     LUT6:I0->O            1   0.094   0.000  TDO_i901 (TDO_i901)
+     MUXF7:I0->O           1   0.251   0.973  TDO_i90_f7 (TDO_i90)
+     LUT5:I0->O            0   0.094   0.000  TDO_i227 (TDO)
+     end scope: 'mdm_0/MDM_Core_I1'
+    BSCAN_VIRTEX5:TDO          0.000          mdm_0/Use_Virtex5.BSCAN_VIRTEX5_I
+    ----------------------------------------
+    Total                      6.391ns (1.282ns logic, 5.109ns route)
+                                       (20.1% logic, 79.9% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Delay:               1.397ns (Levels of Logic = 3)
+  Source:            fpga_0_rst_1_sys_rst_pin (PAD)
+  Destination:       clock_generator_0/clock_generator_0/PLL0_INST/Using_PLL_ADV.PLL_ADV_inst:RST (PAD)
+
+  Data Path: fpga_0_rst_1_sys_rst_pin to clock_generator_0/clock_generator_0/PLL0_INST/Using_PLL_ADV.PLL_ADV_inst:RST
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   0.818   0.341  fpga_0_rst_1_sys_rst_pin_IBUF (fpga_0_rst_1_sys_rst_pin_IBUF)
+     begin scope: 'clock_generator_0'
+     INV:I->O              0   0.238   0.000  clock_generator_0/PLL0_INST/rsti1_INV_0 (clock_generator_0/PLL0_INST/rsti)
+    PLL_ADV:RST                0.000          clock_generator_0/PLL0_INST/Using_PLL_ADV.PLL_ADV_inst
+    ----------------------------------------
+    Total                      1.397ns (1.056ns logic, 0.341ns route)
+                                       (75.6% logic, 24.4% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 93.00 secs
+Total CPU time to Xst completion: 92.34 secs
+ 
+--> 
+
+Total memory usage is 450984 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  489 (   0 filtered)
+Number of infos    :    9 (   0 filtered)
+

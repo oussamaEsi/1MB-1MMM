@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="bootloop" key="Base_System_MMM_hw_platform-microblaze_0-initElf"/>
+	<item value="E:\Code_Doctorat_Virtex5\Base_System_MMM\SDK_workSpace\Base_System_MMM_hw_platform\system_bd.bmm" key="Base_System_MMM_hw_platform-bmmFile"/>
+	<item value="E:\Code_Doctorat_Virtex5\Base_System_MMM\SDK_workSpace\Base_System_MMM_hw_platform\system.bit" key="Base_System_MMM_hw_platform-bitFile"/>
+</section>

@@ -1,0 +1,14 @@
+# Output products list for <single_port_m>
+blk_mem_gen_ds512.pdf
+blk_mem_gen_readme.txt
+single_port_m.asy
+single_port_m.gise
+single_port_m.ngc
+single_port_m.vhd
+single_port_m.vho
+single_port_m.xco
+single_port_m.xise
+single_port_m\doc\blk_mem_gen_ds512.pdf
+single_port_m\doc\blk_mem_gen_v6_1_vinfo.html
+single_port_m_flist.txt
+single_port_m_xmdf.tcl

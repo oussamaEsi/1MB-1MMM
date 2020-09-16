@@ -1,0 +1,15 @@
+##############################################################################
+## Filename:          E:\Code_Doctorat_Virtex5\Base_System_MMM/drivers/ip_mmm256_opt_v1_00_a/data/ip_mmm256_opt_v2_1_0.mdd
+## Description:       Microprocessor Driver Definition
+## Date:              Tue Feb 06 14:32:45 2018 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+OPTION psf_version = 2.1.0;
+
+BEGIN DRIVER ip_mmm256_opt
+
+  OPTION supported_peripherals = (ip_mmm256_opt);
+  OPTION depends = (common_v1_00_a);
+  OPTION copyfiles = all;
+
+END DRIVER

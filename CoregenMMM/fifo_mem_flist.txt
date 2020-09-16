@@ -1,0 +1,22 @@
+# Output products list for <fifo_mem>
+fifo_generator_ug175.pdf
+fifo_generator_v8_2_readme.txt
+fifo_mem.asy
+fifo_mem.gise
+fifo_mem.ngc
+fifo_mem.vhd
+fifo_mem.vho
+fifo_mem.xco
+fifo_mem.xise
+fifo_mem_flist.txt
+fifo_mem_ste\example_design\fifo_mem_top.ucf
+fifo_mem_ste\example_design\fifo_mem_top.vhd
+fifo_mem_ste\example_design\fifo_mem_top.xdc
+fifo_mem_ste\implement\implement.bat
+fifo_mem_ste\implement\implement.sh
+fifo_mem_ste\implement\planAhead_rdn.bat
+fifo_mem_ste\implement\planAhead_rdn.sh
+fifo_mem_ste\implement\planAhead_rdn.tcl
+fifo_mem_ste\implement\xst.prj
+fifo_mem_ste\implement\xst.scr
+fifo_mem_xmdf.tcl

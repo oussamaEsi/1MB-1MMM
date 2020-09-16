@@ -1,0 +1,28 @@
+Release 13.2 ngcbuild O.61xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Command Line: E:\Xilinx\13.2\ISE_DS\ISE\bin\nt64\unwrapped\ngcbuild.exe -p
+xc5vlx50tff1136-1 -intstyle silent -i -sd .. dlmb_wrapper.ngc ../dlmb_wrapper
+
+Reading NGO file
+"E:/Code_Doctorat_Virtex5/Base_System_MMM/implementation/dlmb_wrapper/dlmb_wrapp
+er.ngc" ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGCBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 151856 kilobytes
+
+Writing NGC file "../dlmb_wrapper.ngc" ...
+Total REAL time to NGCBUILD completion:  2 sec
+Total CPU time to NGCBUILD completion:   2 sec
+
+Writing NGCBUILD log file "../dlmb_wrapper.blc"...

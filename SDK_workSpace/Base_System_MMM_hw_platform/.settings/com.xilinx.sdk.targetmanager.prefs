@@ -1,0 +1,3 @@
+#Tue Feb 06 15:04:52 GMT+01:00 2018
+eclipse.preferences.version=1
+jtag.settings=\ -configdevice devicenr 1 partname XC5VLX50T irlength 10 idcode 0xc2a96093 -debugdevice deviceNr 1
